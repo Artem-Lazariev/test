@@ -8,7 +8,7 @@
 
 .header__list {
   padding-top: 16px;
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   gap: calc((100% - 56px) / 3);
@@ -21,6 +21,49 @@
 .header__list-item-link {
   font-family: "DM Sans", sans-serif;
   color: #AE1332;
+}
+.header__list-item-link-main {
+  text-decoration: none;
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__list-item-link {
+    font-size: 14px;
+  }
+  .header__list {
+    gap: 20%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .menu {
+    display: none;
+  }
+  .header__list {
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu {
+    display: flex;
+  }
+  .header__list {
+    display: flex;
+  }
+  .header__list .header__list-item-not-logo {
+    display: none;
+  }
+  .header__list {
+    gap: calc((100% - 56px) / 2);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
