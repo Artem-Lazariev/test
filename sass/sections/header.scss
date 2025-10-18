@@ -1,0 +1,19 @@
+$font-primary: 'DM Sans', sans-serif;
+.header{
+  &__list{
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: calc((100% - 56px)/ 3);
+    &-item{
+      display: flex;
+      flex-direction: row;
+      gap:20px;
+      &-link{
+        font-family: $font-primary;
+        color: #AE1332;
+      }
+    }
+  }
+}

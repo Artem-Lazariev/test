@@ -1,0 +1,26 @@
+.content {
+  padding-left: 32px;
+}
+
+.test {
+  display: none;
+}
+
+.header__list {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: calc((100% - 56px) / 3);
+}
+.header__list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.header__list-item-link {
+  font-family: "DM Sans", sans-serif;
+  color: #AE1332;
+}
+
+/*# sourceMappingURL=main.css.map */
