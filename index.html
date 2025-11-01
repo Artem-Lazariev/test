@@ -1,51 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fresh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+            integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/main.min.css"/>
+    <link rel="stylesheet" href="./style/main.css"/>
 </head>
 <body>
-<header >
-    <div class="content">
-        <ul class="header__list">
-            <li class="header__list-item header__list-item-not-logo">
-                <p class="header__list-item-link">How It Works</p>
-                <p class="header__list-item-link">Fruits</p>
-                <p class="header__list-item-link">Contacts</p>
-            </li>
-
-            <li class="header__list-item ">
-                <a href="index.html" class="header__list-item-link-logo">
-                    <svg style="width: 16px; height: 16px">
-                        <use href="img/logo.svg"></use>
-                    </svg>
-                </a>
-                    <p class="header__list-item-link" style="font-weight: 700; text-transform: uppercase">fresh harvest
-                        box</p>
-
-            </li>
-            <li class="header__list-item header__list-item-not-logo">
-                <svg style="width:24px; height:24px">
-                    <use href="img/basket.svg"></use>
-                </svg>
-            </li>
-            <li class="menu">
-                <svg class="menu" style="width: 24px; height: 24px">
-                    <use href="img/menu-left.svg"></use>
-                </svg>
-            </li>
-        </ul>
+<header class="header">
+    <div class="container header__box">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="">How It Works</a></li>
+                <li class="header__item"><a class="header__link" href="">Fruits</a></li>
+                <li class="header__item"><a class="header__link" href="">Contacts</a></li>
+            </ul>
+        </nav>
+        <a class="header__logo" href="./index.html">
+            <svg class="header__grid">
+                <use href="./img/symbol-defs.svg#grid"></use>
+            </svg>
+            fresh harvest box
+        </a>
+        <button class="header__btn" type="button">
+            <svg class="header__basket">
+                <use href="./img/symbol-defs.svg#basket"></use>
+            </svg>
+        </button>
+        <button class="header__button" type="button">
+            <svg class="header__lister">
+                <use href="./img/symbol-defs.svg#menu"></use>
+            </svg>
+        </button>
 
     </div>
 </header>
-
-<!--hero-->
-
+<main>
+    <section class="hero">
+        <div class="container hero__box">
+            <h1 class="hero__title">fresh harvest box is your 0ne-stop place for a delicious fruit basket</h1>
+            <div class="hero__wrap">
+            <div class="hero__wrapper">
+                <picture>
+                    <source media="(min-width:1248px)" srcset="./img/desktop/hero_girl-dekstop@1x.webp 1x, ./img/desktop/hero_girl-dekstop@2x.webp 2x">
+                    <source media="(min-width:735px)" srcset="./img/tablet/hero_girl-tablet@1x.webp 1x, ./img/tablet/hero_girl-tablet@2x.webp 2x">
+                    <source media="(max-width:734px)" srcset="./img/mobile/hero_girl-mobile@1x.webp 1x, ./img/mobile/hero_girl-mobile@2x.webp 2x">
+                    <img class="hero__img" src="./img/hero_girl@x1.webp" alt="hero"/>
+                </picture>
+            </div>
+            <button class="hero__btn" type="button">
+                <span class="hero__btn__item">SHOP NOW</span>
+            </button>
+            </div>
+            <div class="hero__position">
+            <div class="hero__container">
+            <div>
+            <p class="hero__text">Our expertly curated fruit baskets are made with the freshest, highest quality fruits available. Whether you are looking for a healthy snack or a gift for a loved one, Fresh Harvest Box has got you covered.</p>
+            <div class="hero__melon">
+                <p class="hero__lead">Fruit</p>
+                <picture>
+                <source media="(min-width:1258px)" srcset="./img/desktop/melon-dekstop@1x.webp 1x, ./img/desktop/melon-dekstop@2x.webp 2x">
+                <source media="(min-width:735px)" srcset="./img/tablet/melon-tablet@1x.webp 1x, ./img/tablet/melon-tablet@2x.webp 2x">
+                <source media="(max-width:734px)" srcset="./img/mobile/melon-mobile@1x.webp 1x, ./img/mobile/melon-mobile@2x.webp 2x">
+                <img class="hero__image" src="./img/refreshing@1x.webp" alt="melon">
+                </picture>
+                <p class="hero__desk">Refreshing and juicy, watermelon is the perfect summer treat and a great source of hydration</p>
+            </div>
+            </div>
+            <div class="hero__content">
+            <ul class="hero__list">
+                <li class="hero__item"><button class="hero__button" type="button">#organic</button></li>
+                <li class="hero__item"><button class="hero__button" type="button">#products</button></li>
+                <li class="hero__item"><button class="hero__button" type="button">#basket</button></li>
+                <li class="hero__item"><button class="hero__button" type="button">#fruits</button></li>
+            </ul>
+            <div class="hero__strawberry">
+                <p class="hero__leader">Fruit</p>
+                <picture>
+                    <source srcset="./img/desktop/strawberry-dekstop@1x.webp 1x, ./img/desktop/strawberry-dekstop@2x.webp 2x" media="(min-width:1248px)">
+                    <source media="(min-width:735px)" srcset="./img/tablet/strawberry-tablet@1x.webp 1x, ./img/tablet/strawberry-tablet@2x.webp 2x">
+                    <source media="(max-width: 734px)" srcset="./img/mobile/strawberry-mobile@1x.webp 1x, ./img/mobile/strawberry-mobile@2x.webp 2x">
+                    <img class="hero__images" src="./img/desktop/strawberry-dekstop@1x.webp" alt="strawberry">
+                </picture>
+                <p class="hero__desk">Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making them a delicious and healthy snack</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="plan">
+        <div class="container">
+            <h2 class="plan__title">To order your fruit basket, simply follow these easy steps</h2>
+            <p class="plan__subtitle">Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy the taste of fresh fruit
+            without ever leaving your home. Whether you're looking for a healthy snack or a thoughtful gift, our fruit baskets are
+            the perfect choice.</p>
+            <ul class="plan__list">
+                <li class="plan__item">
+                    <h3 class="plan__step">First step</h3>
+                    <p class="plan__caption">Just choose the fruit you want to order by clicking on the checkboxes next to it.</p>
+                </li>
+                <li class="plan__item">
+                    <h3 class="plan__step">Second step</h3>
+                    <p class="plan__caption">Click on the basket and fill out the form.</p>
+                </li>
+                <li class="plan__item">
+                    <h3 class="plan__step">Third step</h3>    
+                    <p class="plan__caption">Sit back and relax! Your fresh fruit basket will be delivered.</p>
+                </li>
+            </ul>
+            <picture >
+                <source srcset="./img/desktop/plan_desktop@1x.webp 1x , ./img/desktop/plan_desktop@2x.webp 2x" media="(min-width:1248px)">
+                <source srcset="./img/tablet/plan__tablet@1x.webp 1x , ./img/tablet/plan__tablet@2x.webp 2x" media="(min-width:735px)">
+                <source srcset="./img/mobile/plan__mobile@1x.webp 1x , ./img/mobile/plan__mobile@2x.webp 2x" media="(max-width:734px)">
+                <img class="plan__img" src="./img/desktop/plan_desktop@1x.webp" alt="">
+            </picture>
+        </div>
+    </section>
+</main>
 </body>
 </html>
